@@ -131,47 +131,38 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
                 "cheese to your guacamole dip. Purists may be horrified, but so what? It still tastes great.");
 
         guacRecipe.setNotes(guacNotes);
-        guacNotes.setRecipe(guacRecipe);
 
-        guacRecipe.getIngredients().add(new Ingredient("ripe avocados",
+        guacRecipe.addIngredient(new Ingredient("ripe avocados",
                 new BigDecimal(2),
-                eachUom,
-                guacRecipe
+                eachUom
         ));
-        guacRecipe.getIngredients().add(new Ingredient("kosher salt",
+        guacRecipe.addIngredient(new Ingredient("kosher salt",
                 new BigDecimal(".5"),
-                teaSpoonUom,
-                guacRecipe
+                teaSpoonUom
         ));
-        guacRecipe.getIngredients().add(new Ingredient("fresh lime or lemon juice",
+        guacRecipe.addIngredient(new Ingredient("fresh lime or lemon juice",
                 new BigDecimal(2),
-                tableSpoonUom,
-                guacRecipe
+                tableSpoonUom
         ));
-        guacRecipe.getIngredients().add(new Ingredient("minced red onion or thinly sliced green onion",
+        guacRecipe.addIngredient(new Ingredient("minced red onion or thinly sliced green onion",
                 new BigDecimal(2),
-                tableSpoonUom,
-                guacRecipe
+                tableSpoonUom
         ));
-        guacRecipe.getIngredients().add(new Ingredient("serrano (or jalapeño) chilis, stems and seeds removed, minced",
+        guacRecipe.addIngredient(new Ingredient("serrano (or jalapeño) chilis, stems and seeds removed, minced",
                 new BigDecimal(2),
-                eachUom,
-                guacRecipe
+                eachUom
         ));
-        guacRecipe.getIngredients().add(new Ingredient("cilantro (leaves and tender stems), finely chopped",
+        guacRecipe.addIngredient(new Ingredient("cilantro (leaves and tender stems), finely chopped",
                 new BigDecimal(2),
-                tableSpoonUom,
-                guacRecipe
+                tableSpoonUom
         ));
-        guacRecipe.getIngredients().add(new Ingredient("freshly ground black pepper",
+        guacRecipe.addIngredient(new Ingredient("freshly ground black pepper",
                 new BigDecimal(2),
-                dashUom,
-                guacRecipe
+                dashUom
         ));
-        guacRecipe.getIngredients().add(new Ingredient("ripe tomato, chopped (optional)",
+        guacRecipe.addIngredient(new Ingredient("ripe tomato, chopped (optional)",
                 new BigDecimal(".5"),
-                eachUom,
-                guacRecipe
+                eachUom
         ));
 
         guacRecipe.getCategories().add(americanCategory);
