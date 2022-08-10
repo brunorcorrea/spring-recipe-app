@@ -2,6 +2,7 @@ package com.example.recipeproject.repositories;
 
 import com.example.recipeproject.domain.UnitOfMeasure;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
