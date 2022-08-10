@@ -56,6 +56,13 @@ public class Recipe {
     )
     private Set<Category> categories = new HashSet<>();
 
+    public Recipe(Long id) {
+        this.id = id;
+    }
+
+    public Recipe() {
+    }
+
     public void setNotes(Notes notes) {
         this.notes = notes;
         notes.setRecipe(this);
